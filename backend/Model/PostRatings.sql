@@ -1,0 +1,7 @@
+CREATE TABLE postratings (
+  id BIGSERIAL PRIMARY KEY NOT NULL,
+  postId BIGINT NOT NULL REFERENCES posts(id) ON DELETE CASCADE,
+  username VARCHAR(50) NOT NULL REFERENCES users(username) ON DELETE CASCADE,
+  rating INT NOT NULL,
+  UNIQUE(postId,username)
+);
