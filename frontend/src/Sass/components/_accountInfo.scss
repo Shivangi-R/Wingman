@@ -1,0 +1,31 @@
+.accountinfo-container {
+    position: absolute;
+    top: 100px;
+    width: 90%;
+    left: 5%;
+    background-color: white;
+    border-radius: 4px;
+    padding: 40px;
+
+    .profile-picture{
+        height: 55px;
+        width: 55px;
+        background-color: #baacf1;
+        border: 5px solid rgb(220 169 255);
+        border-radius: 999999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      
+        span{
+          text-transform: capitalize;
+          color: white;
+          font-family: $base-font;
+          font-size: 23px;
+          font-weight: 500;
+          z-index: 3;
+        }
+      
+      }
+}

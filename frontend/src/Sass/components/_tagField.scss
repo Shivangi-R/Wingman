@@ -1,0 +1,28 @@
+.site-tag-plus {
+  font-family: $base-font;
+  font-size: 13px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  width: 90px;
+  justify-content: space-around;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.site-tag-plus:hover {
+  background-color: #1890ff;
+  color: white;
+}
+
+.tag-children {
+  background-color: #1890ff;
+  color: white;
+  border-radius: 5px;
+  height: 27px;
+  font-family: $base-font;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+

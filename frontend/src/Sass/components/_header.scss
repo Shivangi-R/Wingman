@@ -1,0 +1,150 @@
+
+#root {
+  background-color: #dae0e6;
+  height: 100%;
+  overflow: auto;
+  position: relative;
+}
+.btn-bg-gradient {
+  background: $button-gradient-color;
+  border-radius: 6px;
+}
+.header-container {
+  margin: 0;
+  max-height: 90px;
+  width: 100%;
+  background-color: $white;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.header-logo {
+  color: #4d84c8;
+    font-family: "Luckiest Guy", cursive;
+    font-size: 30px;
+    letter-spacing: 10px;
+  display: flex;
+  align-items: center;
+  // font-size: 25px;
+  font-weight: 700;
+  gap: 5px;
+  text-align: center;
+
+}
+
+.profile-avatar{
+  height: 55px;
+  width: 55px;
+  background-color: #baacf1;
+  border: 5px solid rgb(220 169 255);
+  border-radius: 999999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  span{
+    text-transform: capitalize;
+    color: white;
+    font-family: $base-font;
+    font-size: 23px;
+    font-weight: 500;
+    z-index: 3;
+  }
+
+}
+.ant-dropdown {
+  width: fit-content !important;
+}
+
+.signup-btn {
+  height: 40px;
+}
+.search-auto-complete {
+  width: 800px;
+}
+
+.search-input-tag {
+  margin: 5px;
+  background: #116af4;
+  border-radius: 4px;
+  color: white;
+  height: 24px;
+
+  span {
+    color: white;
+  }
+}
+
+.auto-complete-rendered-Label {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: $base-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #116af4;
+}
+
+.auto-complete-rendered-Title {
+  padding-left: 10px;
+  color: #5c5e78;
+}
+
+@media only screen and (max-width: 900px) {
+  .header-container {
+    padding: 10px;
+  }
+
+  .signup-btn {
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .header-logo {
+    flex-direction: column;
+    font-size: 13px;
+    gap: 0px;
+    letter-spacing: 3px;
+
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .search-auto-complete {
+    width: 55%;
+  }
+
+    .profile-avatar {
+      height: 45px;
+      width: 45px;
+      background-color: #baacf1;
+      border: 5px solid rgb(220 169 255);
+      border-radius: 999999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+  
+      span {
+        text-transform: capitalize;
+        color: white;
+        font-family: $base-font;
+        font-size: 22px;
+        font-weight: 500;
+        z-index: 3;
+      }
+  
+    }
+}

@@ -1,0 +1,75 @@
+.login-form.ant-form {
+  padding-right: 80px !important;
+  margin-top: 20px !important;
+}
+
+
+.login-form {
+  .ant-btn {
+    width: 80%;
+  }
+}
+.signup-form.ant-form {
+  padding-right: 80px !important;
+  margin-top: 20px !important;
+}
+
+.login-form {
+  font-family: $base-font;
+}
+.signup-form {
+  font-family: $base-font;
+}
+
+.social-divider {
+  width: 80%;
+  text-align: center;
+  border-bottom: 1px solid #979faf;
+  line-height: 0.1em;
+  margin: -40px 0 20px;
+  margin-left: 10%;
+  .or {
+    background: #fff;
+    padding: 0 10px;
+  }
+}
+.signup-options {
+  margin-top: -10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+// .ant-modal-content{
+//   height: 400px;
+// }
+
+.signup-btn-modal{
+  margin-bottom: 50px;
+  width: 80%;
+}
+
+.login-btn-modal{
+  margin-bottom: 50px;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+// .auth-modal {
+//     .ant-modal-content {
+//       height: 530px !important;
+
+//     }
+//   }
+.signup-options {
+  margin-top: -10px;
+  margin-left: -10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  button{
+    padding: 0 3px;
+    width: 60%;
+  }
+}
+}

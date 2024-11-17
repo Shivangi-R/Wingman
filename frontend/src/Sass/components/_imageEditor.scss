@@ -1,0 +1,221 @@
+.canvas-container {
+  // border: 2px dashed !important;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  // overflow: hidden;
+
+    .edit-image {
+      height: auto;
+      max-width: 100%;
+    }
+}
+
+.edit-btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap: 10px;
+  bottom: 2rem;
+  position: absolute;
+  left: 4%;
+  width: 92%;
+
+  .edit-close-btn {
+    display: fixed;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 40px;
+    background-color: #ff4d4f;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    div {
+      position: relative;
+      font-family: $base-font;
+      font-size: 14px;
+      color: white;
+    }
+  }
+
+  .edit-confirm-btn {
+    display: fixed;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 40px;
+    background-color: #1890ff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    div {
+      position: relative;
+      font-family: $base-font;
+      font-size: 14px;
+      color: white;
+    }
+  }
+}
+
+.tooltip-container {
+  position: absolute;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  bottom: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+
+  .editing-tool-btns {
+    border-radius: 50%;
+    padding: 5px;
+    width: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 43px;
+    border: none;
+    background-image: $button-gradient-color;
+    cursor: pointer;
+  }
+}
+
+.drawing-tool-container {
+  display: flex;
+  position: absoulte;
+  bottom: 2rem;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+
+  .drawing-tool-row-1 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 2rem;
+
+    .drawing-tool-size-picker {
+      position: relative;
+
+      .size-slider {
+        cursor: pointer;
+        width: 7rem;
+      }
+      .size-preview {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 4rem;
+        display: flex;
+        justify-content: center;
+
+        .size-preview-circle {
+          border-radius: 9999px;
+        }
+      }
+    }
+    .undo-btn {
+      position: relative;
+      width: 60px;
+      height: 30px;
+      border: none;
+      color: white;
+      font-family: $base-font;
+      background-image: $button-gradient-color;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+
+  .drawing-tool-row-2 {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    .close-draw-btn, .confirm-draw-btn {
+      border-radius: 50%;
+        padding: 5px;
+        width: 43px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 43px;
+        border: none;
+        background-image: $button-gradient-color;
+        cursor: pointer;
+    }
+
+    .draw-btn, .erase-btn {
+      border-radius: 50%;
+      padding: 5px;
+      width: 43px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 43px;
+      border: none;
+      background-image: $button-gradient-color;
+      cursor: pointer;
+    }
+
+    .color-listbox-container{
+      position: relative;
+
+      .color-listbox-btn{
+        display: flex;
+        overflow: hidden;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 99999px;
+        outline-width: 4px;
+        outline-color: #94a3b8;
+      }
+      .color-listbox-btn:hover{
+        outline-offset: 2px;
+      }
+
+      .color-listbox-options{
+        position: absolute;
+        bottom: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .color-listbox-item{
+        cursor: pointer;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 99999px;
+        list-style-type: none;
+      }
+
+    }
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+
+.canvas-container {
+
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .edit-image {
+      height: auto;
+      max-width: 100%;
+    }
+  }
+}
